@@ -1,6 +1,8 @@
 var express = require('express');
 var router = express.Router();
 const petsController = require("../controller/petsController")
+const usuarioController = require("../controller/usuarioController")
+
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -14,6 +16,8 @@ router.get('/', function(req, res, next) {
 
 //forma correta
 router.get('/servico', petsController.listaServicos);
-router.get('/pets', petsController.listaPets)
-
+router.get('/pets', petsController.listaPets);
+router.get('/cadastro', usuarioController.cadastro);
+router.get('/contato', usuarioController.contato);
+router.get('/login', usuarioController.login)
 module.exports = router;

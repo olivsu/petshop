@@ -13,6 +13,7 @@
     <header>
         <div class="container">
             <a class="logo" href="index.html"><img src="img/logo-white.png" alt="Petshop DH"></a>
+
         <nav>
             <ul>
                 <li><a href="sobre.html">Sobre</a></li>
@@ -24,47 +25,38 @@
         </div>
     </header>
     <main>
-        <section class="banner">
+        <section class="contato">
             <div class="container">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt </p>
-                <img src="img/ilustra-park.png" alt="ilustração de pessoa passeando com o cachorro na praça">
-            </div>
-        </section>
-        <section class="servicos">
-            <div class="container">
-                <h2>serviços</h2>
-                <div class="items">
-                    <article>
-                        <div class="thumb"></div>
-                        <h3>banho completo</h3>
-                        <h4>R$40,00</h4>
-                    </article>
-                    <article>
-                        <div class="thumb"></div>
-                        <h3>banho completo</h3>
-                        <h4>R$40,00</h4>
-                    </article>
-                    <article>
-                        <div class="thumb"></div>
-                        <h3>banho completo</h3>
-                        <h4>R$40,00</h4>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <section class="sobre">
-            <div class="container">
-                <img src="img/ilustra-city.png" alt="Ilustração de pessoa passeando com um cachorro na cidade">
-                <div class="text">
-                    <h3>Sed ut perspiciatis unde iste natus error sit voluptatem accusantium doloremque laudantium,
-                    </h3>
-                    <p>Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae
-                        vitae
-                        dicta
-                        sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
-                        sed
-                        quia
-                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p>
+                <h1>Contato</h1>
+
+                <div class="align-row">
+                    <form method="POST">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="mensagem">Mensagem</label>
+                        <textarea name="mensagem" id="mensagem" required></textarea>
+
+                        <button type="submit" class="btn btn-primary">enviar</button>
+                    </form>
+                    <div class="info">
+                        <p><a href="mailto:contato@petshopdh.com.br">contato@petshopdh.com.br</a> <br>
+                            <a href="tel:+5511984848484">(11) 98484-8484 (whatsapp)</a></p>
+
+                        <p>
+                            AVENIDA PAULISTA, 4242 <br>
+                            BAIRRO CONSOLAÇÃO <br>
+                            SÃO PAULO- SP
+                        </p>
+
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.988721357699!2d-46.77459098487176!3d-23.53290806642761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50ab7feb4519%3A0x739f0ddb0439cf94!2sDigital%20House%20Brasil!5e0!3m2!1spt-BR!2sbr!4v1620050755140!5m2!1spt-BR!2sbr"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+                    </div>
                 </div>
             </div>
         </section>
