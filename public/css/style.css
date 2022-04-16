@@ -199,7 +199,11 @@ section.servicos-lista article .thumb {
     background-color: #555;
     margin: 0 30px 30px;
 }
-
+.thumb img {
+    max-width: 100%;
+    width: 250px;
+    height: 200px;
+}
 section.servicos-lista article .info {
     padding: 0 30px;
     width: 800px;

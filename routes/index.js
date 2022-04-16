@@ -20,4 +20,5 @@ router.get('/pets', petsController.listaPets);
 router.get('/cadastro', usuarioController.cadastro);
 router.get('/contato', usuarioController.contato);
 router.get('/login', usuarioController.login)
+
 module.exports = router;
