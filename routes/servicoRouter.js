@@ -2,6 +2,7 @@ var express = require('express');
 var router = express.Router();
 const multer = require('multer')
 const servicoController = require("../controller/servicoController")
+const validaCadastro = require('../middleware/validaCadastroServico')
 //biblioteca multer
 const storage = multer.diskStorage({
     destination: function(req, file, cb) {
