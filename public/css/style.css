@@ -199,11 +199,15 @@ section.servicos-lista article .thumb {
     background-color: #555;
     margin: 0 30px 30px;
 }
-.thumb img {
+
+ .thumb img{
     max-width: 100%;
     width: 250px;
     height: 200px;
+  
+   
 }
+
 section.servicos-lista article .info {
     padding: 0 30px;
     width: 800px;
@@ -268,4 +272,15 @@ section.contato h1 {
 section.contato a:any-link,
 section.contato p {
     color: #575757;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+   
+}
+.formUser{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
 }

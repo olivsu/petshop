@@ -1,15 +1,17 @@
-let modelServico = require("../model/servico.json");
 let modelPets = require("../model/pets.json")
 
 const petsController = {
     index:(req,res)=>{
-        res.render('cadastro')
+        res.render('cadastroPets')
     },
-    listaServicos:(req,res)=>{
-    res.send(modelServico);
-},
     listaPets:(req,res)=>{
-        res.send(modelPets);
+        console.log(res.send(modelPets))
+    },
+    cadastraPets:(req,res)=>{
+        let pet = req.body
+        modelPets.push(pet)
+        //Criar a view de exiber pets
+        res.send(modelPets)
     }
 }
 
